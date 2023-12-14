@@ -3,9 +3,9 @@ import random
 print('Welcome to Rock, Paper, Scissors!')
 playerChoice = int(input('What do you choose? Type "0" for Rock, "1" for Paper, and "2" for Scissors.\n'))
 a, b, c = 'rock', 'paper', 'scissors'
-print('You chose ' + str(playerChoice))
+print(f'You chose {playerChoice})
 pcChoice = random.randint(0,2)
-print('Computer chose ' + str(pcChoice))
+print(f'Computer chose {pcChoice})
 if playerChoice == pcChoice:
     print('Draw! Game over. ')
 elif playerChoice == 0 and pcChoice == 2:
